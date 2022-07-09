@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="scripts.js"></script>
+        <link href="styling.css" rel="stylesheet">
+        <title> Simple Interest Calculator</title>
+    </head>
+    <body onload="def()">
+        <span id="heading"> Simple Interest Calculator</span>
+        <br><br><br>
+        <div id="form">
+            <label for="amount">Amount</label>    
+            <input type="text" id="amount" name="amount">
+            <br><br>
+            <label for="roi">Rate of Interest</label>    
+            <input type="range" id="roi" name="roi" min="0.25" max="16" value="10.25" onchange="displayrate()">
+            <label id="selected_rate">10.25</label>
+            <br><br>
+            <label for="numyears">No. of Years</label>    
+            <select id="numyears" >
+                <option value="0">0</option>
+                <!--will be populated at runtime-->
+            </select><br><br>
+            <button type="button" onclick="calculate()">Compute Interest</button>
+            <br><br>
+            <span id="result"></span>
+        </div>
+        <br>
+    
+    </body>
+    <footer>
+        This Calculator Belongs to Suhas
+    </footer>
+
+</html>
