@@ -1,3 +1,7 @@
+window.onload=function(){
+    def();
+}
+
 function def()
 {
     let obj=document.getElementById("numyears");
